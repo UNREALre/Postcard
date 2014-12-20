@@ -58,12 +58,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53q-8T-r5a">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="72" width="302" height="92"/>
+                                </variation>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXS-Np-4NR">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="182" width="368" height="21"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="merry-christmas-stamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="S5B-mH-enl">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="205" y="223" width="113" height="121"/>
+                                </variation>
+                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите имя" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tp4-nh-ynO">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="187" width="181" height="30"/>
+                                    <rect key="frame" x="16" y="238" width="181" height="30"/>
                                 </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите текст открытки" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ont-rQ-0vL">
@@ -71,7 +95,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="225" width="181" height="30"/>
+                                    <rect key="frame" x="16" y="276" width="181" height="30"/>
                                 </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Fw-dA-xCo">
@@ -82,50 +106,38 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="263" width="181" height="30"/>
+                                    <rect key="frame" x="16" y="314" width="181" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="clickSendButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6NT-tg-gSj"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53q-8T-r5a">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="72" width="302" height="92"/>
-                                </variation>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="merry-christmas-stamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="S5B-mH-enl">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="205" y="172" width="113" height="121"/>
-                                </variation>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="53q-8T-r5a"/>
+                                <exclude reference="iXS-Np-4NR"/>
+                                <exclude reference="S5B-mH-enl"/>
                                 <exclude reference="tp4-nh-ynO"/>
                                 <exclude reference="Ont-rQ-0vL"/>
                                 <exclude reference="7Fw-dA-xCo"/>
-                                <exclude reference="53q-8T-r5a"/>
-                                <exclude reference="S5B-mH-enl"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
+                                <include reference="53q-8T-r5a"/>
+                                <include reference="iXS-Np-4NR"/>
+                                <include reference="S5B-mH-enl"/>
                                 <include reference="tp4-nh-ynO"/>
                                 <include reference="Ont-rQ-0vL"/>
                                 <include reference="7Fw-dA-xCo"/>
-                                <include reference="53q-8T-r5a"/>
-                                <include reference="S5B-mH-enl"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="labelHidden" destination="53q-8T-r5a" id="qGH-W5-Omj"/>
+                        <outlet property="labelNameHidden" destination="iXS-Np-4NR" id="7je-Lr-4km"/>
                         <outlet property="mailButton" destination="7Fw-dA-xCo" id="ggY-Kq-wGR"/>
                         <outlet property="nameInput" destination="tp4-nh-ynO" id="8Zb-dV-eLH"/>
                         <outlet property="textMessageInput" destination="Ont-rQ-0vL" id="UcF-qi-lfg"/>

@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var textMessageInput: UITextField!
     @IBOutlet weak var labelHidden: UILabel!
     @IBOutlet weak var mailButton: UIButton!
+    @IBOutlet weak var labelNameHidden: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,13 +28,17 @@ class ViewController: UIViewController {
 
     @IBAction func clickSendButton(sender: AnyObject) {
         labelHidden.hidden = false
+        labelNameHidden.hidden = false
         labelHidden.text = textMessageInput.text
         labelHidden.textColor = UIColor.greenColor()
+        labelNameHidden.text = nameInput.text
+        labelNameHidden.textColor = UIColor.redColor()
         
         textMessageInput.text = ""
         textMessageInput.resignFirstResponder()
         
         mailButton.setTitle("Отправлено!", forState: UIControlState.Normal)
+        mailButton.backgroundColor = UIColor.blueColor()
     }
 
 }
